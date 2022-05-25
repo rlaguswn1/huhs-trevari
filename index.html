@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,17 +18,38 @@
                 </ul>
             <li>로그인</li>
         </ul>
+    <!--ul/li로 하는게 맞나? div/span을 썼어야할까?
+    가로로 펴져있지만 리스트는 맞아서 저게 맞을거 같기도 한데
+    뭔가 확신이 안든다-->    
     </header>
     <section class="first__section">
-        <div><!--왼쪽 원--></div>
-        <div><!--오른쪽 원--></div>
+        <div id="circle"><!--왼쪽 원--></div>
+        <div id="circle"><!--오른쪽 원--></div>
     </section>
-    <div class="dmargin">
+    <div class="div__margin">
     </div>
     <section>
-        <h2>마감 임박 클럽</h2>
+        <header class="middle__header">
+            <span><h3>마감 임박 클럽</h3></span>
+            <span>전체보기</span>
+        </header>
+        <div class="div__margin"></div>
+        <article class="second__section">
+            <div>
+                <p class="p__picture">사진</p>
+                <p class="p__contents">콘텐츠</p>
+                <hr>
+                <p class="p__last">마지막</p>
+            </div>
+            <div>
+                <p class="p__picture">사진</p>
+            </div>
+            <div>
+                <p class="p__picture">사진</p>
+            </div>
+        </article>
     </section>
-    <h2>오늘의 인기 TOP 10</h2>
+    <h3 margin="1000px">오늘의 인기 TOP 10</h3>
     <div>클럽 모두보기</div>
     <section>블로그</section>
     <section>공지사항</section>
