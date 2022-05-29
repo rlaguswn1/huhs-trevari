@@ -1,7 +1,7 @@
-body {
-  margin: 0 250px;
+/* body {
+  margin: 0 100px;
   align-items: center;
-}
+} */
 
 ul {
   list-style: none;
@@ -12,6 +12,7 @@ ul {
   display: flex;
   flex-direction: vertical;
   justify-content: space-between;
+  margin: 0 100px 30px 100px;
 }
 
 .header__list__ul {
@@ -31,7 +32,19 @@ ul li {
   margin: 0px;
 }
 
+.div__test {
+  margin: 5px;
+  border-radius: 40px;
+  background-color: rgba(152, 152, 152, 0.8);
+  height: 40px;
+  width: 40px;
+  border-color: white;
+  border-style: solid;
+  border-width: 0.8px;
+}
+
 .first__section {
+  margin: 0 100px;
   height: 300px;
   background-color: #ff7900;
   border-radius: 10px;
@@ -44,7 +57,7 @@ ul li {
   width: 100%;
 }
 
-#circle{
+#circle {
   margin: 20px;
   border-radius: 40px;
   background-color: rgba(255, 255, 255, 0.8);
@@ -63,6 +76,7 @@ ul li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0 100px;
 }
 
 .second__section {
@@ -70,32 +84,28 @@ ul li {
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
+  align-items: center;
 }
 
-.second__section div{
-  width: 32%;
+.div__section {
+  width: 320px;
   height: auto;
   border-style: solid;
   border-width: 0.5px;
   border-radius: 5px;
   border-color: #c4c4c4;
   align-items: center;
-  /* text-align: center; */
-  position: relative;
-}
-
-.second__section div p {
-  margin: 0px;
+  text-align: center;
 }
 
 .p__picture {
+  width: 100%;
   height: 150px;
   background-color: rgb(192, 192, 192);
   border-radius: 5px 5px 0 0;
 }
 
-.p__contents{
+.p__contents {
   height: 200px;
   text-align: left;
   align-items: center;
@@ -105,21 +115,14 @@ ul li {
 .p__last {
   height: 50px;
   text-align: center;
-  align-items: center;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
 }
 
-.p__last+div{
-  text-align: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-}
-
-hr{
-  width: 90%;
-  align-self: center;
+hr {
+  margin: 0 5%;
 }
 
 .contents__head {
@@ -128,25 +131,21 @@ hr{
   margin: 0 0 50px 0;
 }
 
-.contents__contents{
+.contents__contents {
   font-size: 12pt;
   color: #797777;
 }
 
-.contents__last{
+.contents__last {
   font-size: 9pt;
   color: #797777;
-  /* align-items:center;
-  justify-content: center; */
-  /* text-align: center; */
-  
 }
 
-.contents__heart{
+.contents__heart {
   height: 30px;
   width: 30px;
   background-color: #ffbc82;
   border-radius: 3px;
-  font-size: 25px;  
+  font-size: 15pt;
   color: rgb(255, 102, 102);
 }
