@@ -1,7 +1,12 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
 body {
   padding: 0;
   margin: 0;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
 }
+
+/*최상단 헤더*/
 
 ul {
   list-style: none;
@@ -10,48 +15,73 @@ ul {
 
 .header__ul {
   display: flex;
-  flex-direction: vertical;
+  align-items: center;
   justify-content: space-between;
-  margin: 0 15% 30px 15%;
+  margin: 15px 10% 30px 10%;
 }
 
 .header__list__ul {
   display: flex;
   flex-direction: vertical;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
-ul li {
-  margin: 10px;
+.header__ul li:hover {
+  cursor: pointer;
 }
 
-/* #logo {
+ul li {
+  margin: 0 20px 0 0;
+  font-size: 16px;
+  padding: 0;
+}
+
+.li__hover:hover {
   color: #ff7900;
-  font-size: 25px;
-  margin: 0px;
-} */
+  cursor: pointer;
+}
+
+nav {
+  padding: 0;
+  margin: 0;
+}
+
+/*이미지 광고 부분*/
 
 .div__circle {
   border-radius: 40px;
-  background-color: rgba(152, 152, 152, 0.8);
-  height: 40px;
-  width: 40px;
-  border-color: white;
-  border-style: solid;
-  border-width: 0.8px;
+  /* background-color: #dad8d8; */
+  background-color: rgba(0, 0, 0, 0.05);
+  height: 37px;
+  width: 37px;
+  /* border-color: white;
+  border-style: solid; */
+  /* border-width: 0.8px; */
 }
 
-.div__sort {
+.div__circle:hover {
+  cursor: pointer;
+}
+
+.circle__sort {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  text-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.circle__lmargin {
+  margin-left: 100px;
+}
+
+.circle__rmargin {
+  margin-right: 100px;
 }
 
 .first__section {
-  margin: 0 15%;
-  height: 300px;
+  margin: 0 10%;
+  height: 320px;
   background-color: #ff7900;
   border-radius: 10px;
   display: flex;
@@ -66,7 +96,7 @@ ul li {
 #circle {
   margin: 20px;
   border-radius: 40px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.5);
   height: 40px;
   width: 40px;
   border-color: white;
@@ -74,27 +104,77 @@ ul li {
   border-width: 0.8px;
 }
 
-.div__margin {
-  height: 10px;
+#circle:hover {
+  cursor: pointer;
 }
+
+.div__margin {
+  height: 60px;
+}
+
+/*중간 제목*/
 
 .middle__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 15%;
+  margin: 0 10% 40px 10%;
+  color: #838380;
+  font-size: 16px;
 }
 
-.second__section {
-  height: auto;
+.hover__orange:hover {
+  color: #ff7900;
+  cursor: pointer;
+}
+
+/*폰트*/
+
+h2 {
+  font-weight: bold;
+  font-size: 24px;
+  color: black;
+}
+
+h3 {
+  font-size: 18px;
+  color: #838380;
+
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  margin: 0 15%;
+}
+
+h4 {
+  font-size: 14px;
+  color: #838380;
+}
+
+.h4__bo {
+  font-size: 16px;
+  color: #000000;
+
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.h4__b {
+  font-size: 14px;
+  color: #000000;
+}
+
+/*카드들*/
+
+.div__sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: center;
+  width: 80%;
+  padding: 0;
 }
 
 .div__section {
-  width: 30%;
+  width: 32%;
   /* margin: 20px; */
   height: auto;
   border-style: solid;
@@ -103,6 +183,10 @@ ul li {
   border-color: #c4c4c4;
   align-items: center;
   text-align: center;
+}
+
+.div__section:hover {
+  cursor: pointer;
 }
 
 .p__picture {
@@ -124,7 +208,7 @@ ul li {
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   padding: 0 20px;
 }
 
@@ -132,30 +216,23 @@ hr {
   margin: 0 5%;
 }
 
-.contents__head {
-  font-size: 15pt;
-  font-weight: bold;
-  margin: 0 0 50px 0;
-}
-
-.contents__contents {
-  font-size: 12pt;
-  color: #797777;
-}
-
-.contents__last {
-  font-size: 9pt;
-  color: #797777;
-}
-
 .contents__heart {
   height: 40px;
   width: 40px;
-  background-color: #ffbc82;
+  background-color: #fff7e0;
   border-radius: 3px;
-  font-size: 15pt;
+  font-size: 24px;
   color: rgb(255, 102, 102);
   padding: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.contents__last {
+  font-size: 14px;
+  color: #797777;
 }
 
 .all__club {
@@ -163,10 +240,19 @@ hr {
   justify-content: center;
   align-items: center;
   background-color: #ff7900;
-  width: 400px;
-  height: 40px;
+  width: 386px;
+  height: 48px;
+  font-size: 16px;
+  font-weight: bold;
   margin: 0 0 0 37%;
   color: white;
+  border-radius: 0.1875rem;
+}
+
+.all__club:hover {
+  cursor: pointer;
+  background-color: #ff9a42;
+  transition-duration: 0.3s;
 }
 
 .third_section {
@@ -174,18 +260,7 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 0 15%;
-}
-
-.third_section .div__section {
-  width: 350px;
-  height: auto;
-  border-style: solid;
-  border-width: 0.5px;
-  border-radius: 5px;
-  border-color: #c4c4c4;
-  align-items: center;
-  text-align: center;
+  margin: 0 10%;
 }
 
 .p__contents__last {
@@ -195,8 +270,60 @@ hr {
   padding: 5%;
 }
 
+.last__section {
+  margin: 0 10%;
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+.last__section > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.last__section > div > div {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #ecece9 1px solid;
+  margin-bottom: 48px;
+  padding-bottom: 12px;
+}
+
+.last__section > div > div:hover {
+  cursor: pointer;
+}
+
+/*푸터*/
+
 .div__footer {
-  background-color: #c4c4c4;
-  height: 100px;
+  background-color: #f2f2f0;
+  height: auto;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* padding: 50px 10%; */
+}
+
+.div__footer > div {
+  margin: 50px 10%;
+}
+
+.div__footer > div > nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.h4__b ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.h4__b ul li:hover {
+  cursor: pointer;
+}
+
+div img:hover {
+  cursor: pointer;
 }
